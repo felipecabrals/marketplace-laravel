@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         @yield('content')
+        @include('flash::message')
     </div>
 </body>
 </html>
