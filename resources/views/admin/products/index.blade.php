@@ -8,6 +8,7 @@
         <th>#</th>
         <th>Nome</th>
         <th>Preço</th>
+        <th>Loja</th>
         <th>Ações</th>
     </tr>
     </thead>
@@ -17,6 +18,7 @@
             <td>{{$product->id}}</td>
             <td>{{$product->name}}</td>
             <td>{{$product->price }}</td>
+            <td>{{$product->store->name }}</td>
             <td>
                 <div class="btn-group">
                     <a href="{{route('admin.products.edit', ['product' => $product->id])}}" class="btn btn-sm btn-warning">Editar</a>
